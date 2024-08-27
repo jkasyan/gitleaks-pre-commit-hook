@@ -16,7 +16,7 @@ if op_system == "Windows":
     move_cmd = f"move {gitleaks_folder}\\gitleaks.exe \"C:\\Windows\\System32\\gitleaks.exe\""
 else:
     gitleaks_folder = home + "/Downloads/gitleaks"
-    f"mv {gitleaks_folder}/gitleaks.exe /usr/local/bin"
+    move_cmd = f"sudo mv {gitleaks_folder}/gitleaks /usr/local/bin"
 
 print("os :", op_system)
 
